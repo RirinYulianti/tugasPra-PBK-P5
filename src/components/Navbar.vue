@@ -3,7 +3,7 @@
     
     <q-toolbar>
       <q-btn ro dense @click="toggleDrawer" icon="menu" />
-      <q-toolbar-title>Toko Online</q-toolbar-title>
+      <q-toolbar-title class="titel">ZALORA</q-toolbar-title>
       <q-drawer v-model="showDrawer" :side="drawerSide" round dense content-class="drawer-content">
           <q-tabs v-model="showDrawer">
             <q-tab class="drawer-item" v-for="(item, index) in drawerItems" :key="index"  :label="item.label" :icon="item.icon" />
@@ -51,11 +51,18 @@ const selectDrawerItem = (index) => {
 </script>
 
 <style scoped>
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
+
 .drawer-content {
   width: 250px;
 }
 
 .drawer-item {
   color: black;
+}
+
+.titel{
+  font-weight: bold;
+  font-family: "Cormorant Garamond", serif;
 }
 </style>

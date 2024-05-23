@@ -37,7 +37,7 @@ export default {
   },
   data() {
     return {
-      navbarTitle: 'Toko Online',
+      navbarTitle: 'ZALORA',
       navbarItems: [
         { label: 'Home', link: '#' },
         { label: 'Products', link: '#' },
